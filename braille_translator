@@ -1,5 +1,4 @@
 ```python
-
 def brail_translator(string):
     #create brail encoding dictionary table
     keys = 'The quick brown fox jumps over the lazy dog'
@@ -28,6 +27,4 @@ def brail_translator(string):
 
 #string = 'The quick brown fox jumps over the lazy dog'
 #brail_translator(string)
-
-
 ```
