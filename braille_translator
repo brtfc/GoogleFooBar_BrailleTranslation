@@ -1,0 +1,33 @@
+```python
+
+def brail_translator(string):
+    #create brail encoding dictionary table
+    keys = 'The quick brown fox jumps over the lazy dog'
+    values = '000001011110110010100010000000111110101001010100100100101000000000110000111010101010010111101110000000110100101010101101000000010110101001101100111100011100000000101010111001100010111010000000011110110010100010000000111000100000101011101111000000100110101010110110'
+    char_encoding_table = {}
+    char_encoding_table['capitalize_mark'] = values[0:6]
+    values = values[6:]
+
+    for index in range(len(values)//6):
+        char_encoding_table[keys[index].lower()] = values[0:6]
+        values = values[6:]
+        
+    #convert string to brail format
+    brail_format = ''
+    for char_key in string:
+        if char_key.isupper():
+            brail_format += char_encoding_table['capitalize_mark']
+            brail_format += char_encoding_table[char_key.lower()]
+        else:
+            brail_format += char_encoding_table[char_key.lower()]
+            
+    for (key, value) in char_encoding_table.items():
+        print('Key: {} ==> value: {}'.format(key, value))
+    
+    return brail_format
+
+#string = 'The quick brown fox jumps over the lazy dog'
+#brail_translator(string)
+
+
+```
