@@ -1,4 +1,4 @@
-```python
+```python-traceback
 def brail_translator(string):
     #create brail encoding dictionary table
     keys = 'The quick brown fox jumps over the lazy dog'
