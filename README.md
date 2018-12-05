@@ -1,12 +1,6 @@
 # GoogleFooBar_BrailleTranslation
 translate braille dots into 6 digits of 0s and 1s
 
-foobar:~/braille_translation_2 guest$ ls
-constraints.txt
-readme.txt
-solution.java
-solution.py
-foobar:~/braille_translation_2 guest$ cat readme.txt 
 Braille Translation
 ===================
 
